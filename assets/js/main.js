@@ -32,9 +32,14 @@
     });
   }
 
-  /* Reveal on scroll */
+  /* Reveal on scroll — only elements below the fold at load start hidden,
+     so the first frame is always complete. */
   var reveals = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if ('IntersectionObserver' in window && !reduce) {
+    reveals.forEach(function (el) {
+      if (el.getBoundingClientRect().top > window.innerHeight) el.classList.add('pre');
+    });
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
