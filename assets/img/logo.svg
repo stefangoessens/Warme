@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -20 336 66" fill="none" stroke="#EDE3D8" stroke-width="2.4" stroke-linejoin="miter" stroke-miterlimit="10">
+  <title>Wärme</title>
+  <path d="M0 0 L11 42 L22 6 L33 42 L44 0"/>
+  <path d="M84 42 L101 0 L118 42"/>
+  <circle cx="96.5" cy="-12" r="3.6" fill="#D21F2B" stroke="none"/>
+  <circle cx="105.5" cy="-12" r="3.6" fill="#D21F2B" stroke="none"/>
+  <path d="M160 42 V1.2 H173 A10.5 10.5 0 0 1 173 22.2 H160 M171 22.2 L185 42"/>
+  <path d="M226 42 V1.5 L243.5 30 L261 1.5 V42"/>
+  <path d="M327 1.2 H303 V40.8 H327 M303 21 H324"/>
+</svg>
